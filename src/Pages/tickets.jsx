@@ -6,7 +6,7 @@ import axios from 'axios'
 
 export default function Tickets() {
     const [data,setData] = useState(null)
-    const [Token, setToken] = useState('341a5cea17')
+    const [Token, setToken] = useState('06909e1d70')
 
     useEffect(()=>{
         axios.post('https://rd0.cpvarabia.com/api/CTickets.php',{Token,})

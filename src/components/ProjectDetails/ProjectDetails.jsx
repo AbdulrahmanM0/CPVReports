@@ -4,32 +4,27 @@ import { Row, Table, Col} from 'reactstrap'
 export default function ProjectDetails({data}) {
     console.log(data)
   return (
-    <div>
-        <Table
-            bordered
-            className='text-center'
-            >
-            <thead>
-            </thead>
-            <tbody>
-                <tr>
-                    <th className='table-secondary border border-white' scope="row">
+    <div className='text-center'>
+                <Col sm={12}>
+                    <Row>
+                    <div className='col-sm-4 fw-bold p-2 bg-light border border-secondary-1 '>
                         Owner Name - اسم المالك 
-                    </th>
-                    <td>
+                    </div>
+                    <div className='col-sm-8 p-2 border border-secondary-1 '>
                         {data && data.ProjectDetails[0] && data.ProjectDetails[0].OwnerName}
-                    </td>
-                </tr>
-                <tr>
-                    <th className='table-secondary border border-white' scope="row">
+                    </div>
+                    </Row>
+                </Col>
+                <Col sm={12}>
+                    <Row>
+                    <div className=' col-sm-4 fw-bold p-2 bg-light border border-secondary-1 '>
                         Contractor name - اسم المقاول
-                    </th>
-                    <td>
+                    </div>
+                    <div className='col-sm-8 p-2 border border-secondary-1 '>
                         {data && data.ProjectDetails[0] && data.ProjectDetails[0].ConstructorName}
-                    </td>
-                </tr>
-            </tbody>
-        </Table>
+                    </div>
+                    </Row>
+                </Col>
     </div>
   )
 }

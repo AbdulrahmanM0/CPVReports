@@ -59,7 +59,7 @@ export default function ProjectTickets({data}) {
 
                 <ListGroupItem>
                     <div>
-                        <div className='mb-2'>التعليق: </div>
+                        <div className='mb-2'>:التعليق </div>
                         <div>
                             {item.Comment}
                         </div>
@@ -68,7 +68,7 @@ export default function ProjectTickets({data}) {
 
                 <ListGroupItem>
                     <div>
-                        <div className='mb-2'>التصحيح: </div>
+                        <div className='mb-2'>:التصحيح </div>
                         <div>{item.Corrective}</div>
                     </div>
                 </ListGroupItem>
@@ -136,7 +136,7 @@ export default function ProjectTickets({data}) {
 
                     <ListGroupItem>
                         <div>
-                        <div className='mb-2'>التعليق: </div>
+                        <div className='mb-2'>:التعليق </div>
                             <div>
                                 {item.Comment}
                             </div>
@@ -145,7 +145,7 @@ export default function ProjectTickets({data}) {
 
                     <ListGroupItem>
                         <div>
-                        <div className='mb-2'>التصحيح: </div>
+                        <div className='mb-2'>:التصحيح </div>
                             <div>{item.Corrective}</div>
                         </div>
                     </ListGroupItem>
@@ -203,9 +203,8 @@ export default function ProjectTickets({data}) {
         {data.RD5Inspection.length >= 1 &&
         <>
             <div className='form-container shadow-lg p-4 bg-body rounded-bottom mb-4'>
-                        {/* TR EN*/}
             
-            {data.RD5Inspection.map(item => 
+            {data.RD5InspectionAR.map(item => 
             <div className='mb-3'>    
             <Card >
                 <CardHeader>
@@ -215,7 +214,7 @@ export default function ProjectTickets({data}) {
 
                     <ListGroupItem>
                         <div>
-                        <div className='mb-2'>التعليق: </div>
+                        <div className='mb-2'>:التعليق</div>
                             <div>
                                 {item.Comment}
                             </div>
@@ -224,7 +223,7 @@ export default function ProjectTickets({data}) {
 
                     <ListGroupItem>
                         <div>
-                        <div className='mb-2'>التصحيح: </div>
+                        <div className='mb-2'>:التصحيح </div>
                             <div>{item.Corrective}</div>
                         </div>
                     </ListGroupItem>
@@ -288,7 +287,7 @@ export default function ProjectTickets({data}) {
 
                     <ListGroupItem>
                         <div>
-                        <div className='mb-2'>التعليق: </div>
+                        <div className='mb-2'>:التعليق </div>
                             <div>
                                 {item.Comment}
                             </div>
