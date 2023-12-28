@@ -13,7 +13,7 @@ export default function ProjectDetails({data}) {
             </thead>
             <tbody>
                 <tr>
-                    <th className='table-secondary' scope="row">
+                    <th className='table-secondary border border-white' scope="row">
                         Owner Name - اسم المالك 
                     </th>
                     <td>
@@ -21,7 +21,7 @@ export default function ProjectDetails({data}) {
                     </td>
                 </tr>
                 <tr>
-                    <th className='table-secondary' scope="row">
+                    <th className='table-secondary border border-white' scope="row">
                         Contractor name - اسم المقاول
                     </th>
                     <td>
