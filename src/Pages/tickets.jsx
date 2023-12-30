@@ -16,8 +16,9 @@ export default function Tickets() {
     console.log(token)
     const [data,setData] = useState(null)
     const [lang,setLang] = useState(1)
+    console.log(location.pathname)
     useEffect(()=>{
-        axios.post('https://rd0.cpvarabia.com/api/CTickets.php',{Token:token,lang: lang == 1 ? "" : "EN"})
+        axios.post('https://rd0.cpvarabia.com/api/CTickets.php',{Token:location.pathname.slice(1),lang: lang == 1 ? "" : "EN"})
         .then(res => {
             setData(res.data.RFNO)
             console.log(res.data.RFNO)
