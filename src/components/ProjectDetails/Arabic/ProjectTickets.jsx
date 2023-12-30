@@ -9,8 +9,8 @@ export default function ProjectTickets({data}) {
         {/* TR */}
         {data.TRAR.length >= 1 &&
         <>
-        <div className='bg-dark text-white  p-2 ps-4 form-title rounded-top fw-bold'>
-            TR
+        <div className='bg-dark text-white  p-2 ps-4 form-title rounded-top fw-bold text-end'>
+    :    مخاطر تؤدى إلى تحفظات فنية في شهادة تأكيد السلامة (التقرير النهائي)
         </div>
         <div className='form-container shadow-lg p-4 bg-body rounded-bottom mb-4'>
         {data.TRAR.map((item,i) => 
@@ -48,8 +48,8 @@ export default function ProjectTickets({data}) {
         {/* RD5 */}
         {data.RD5AR.length >= 1 &&
         <>
-            <div className='bg-dark text-white  p-2 ps-4 form-title rounded-top fw-bold'>
-                RD5
+            <div className='bg-dark text-white  p-2 ps-4 form-title rounded-top fw-bold text-end'>
+        :    ملاحظات تؤدي الى توقف العمل ويتم حلها بإرسال العميل المطلوب قبل زيارة الفاحص الفني إلى الموقع
             </div>
             <div className='form-container shadow-lg p-4 bg-body rounded-bottom mb-4'>
             {data.RD5AR.map((item,i) => 
@@ -87,8 +87,8 @@ export default function ProjectTickets({data}) {
         {/* RD5 Inspection */}
         {data.RD5InspectionAR.length >= 1 &&
         <>
-            <div className='bg-dark text-white  p-2 ps-4 form-title rounded-top fw-bold'>
-                RD5 Inspection
+            <div className='bg-dark text-white  p-2 ps-4 form-title rounded-top fw-bold text-end'>
+        :    ملاحظات تؤدي الى توقف العمل ويتم حلها بإرسال العميل المطلوب أثناء زيارة الفاحص الفني إلى الموقع
             </div>
             <div className='form-container shadow-lg p-4 bg-body rounded-bottom mb-4'>
             {data.RD5InspectionAR.map((item,i) => 
@@ -127,7 +127,7 @@ export default function ProjectTickets({data}) {
         {data.NoteAR.length >= 1 &&
         <>
             <div className='bg-dark text-white text-end  p-2 pe-4 form-title rounded-top fw-bold'>
-                الملاحظات
+        .    ملاحظات فنية في شهادة تأكيد السلامة (التقرير النهائي)
             </div>
             <div className='form-container shadow-lg p-4 bg-body rounded-bottom mb-4'>
                         {/* TR EN*/}

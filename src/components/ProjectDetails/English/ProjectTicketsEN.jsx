@@ -10,7 +10,7 @@ export default function ProjectTickets({data}) {
         {data.TR.length >= 1 &&
         <>
         <div className='bg-dark text-white  p-2 ps-4 form-title rounded-top fw-bold'>
-            TR
+        Technical reservations Risks in the certificate of approval (Final Report):
         </div>
         <div className='form-container shadow-lg p-4 bg-body rounded-bottom mb-4'>
                     {/* TR EN*/}
@@ -50,7 +50,7 @@ export default function ProjectTickets({data}) {
         {data.RD5.length >= 1 &&
         <>
             <div className='bg-dark text-white  p-2 ps-4 form-title rounded-top fw-bold'>
-                RD5
+            Risks lead to work interruption report (These notes are closed by the client before the visit of the Inspection Team):
             </div>
             <div className='form-container shadow-lg p-4 bg-body rounded-bottom mb-4'>
                         {/* TR EN*/}
@@ -91,7 +91,7 @@ export default function ProjectTickets({data}) {
         {data.RD5Inspection.length >= 1 &&
         <>
             <div className='bg-dark text-white  p-2 ps-4 form-title rounded-top fw-bold'>
-                RD5 Inspection
+            Risks lead to work interruption report (These notes are closed by the client during the visit of the Inspection Team ):
             </div>
             <div className='form-container shadow-lg p-4 bg-body rounded-bottom mb-4'>
                         {/* TR EN*/}
@@ -132,7 +132,7 @@ export default function ProjectTickets({data}) {
         {data.Note.length >= 1 &&
         <>
             <div className='bg-dark text-white  p-2 ps-4 form-title rounded-top fw-bold'>
-                Notes
+            Technical notes in the certificate of approval (Final Report).
             </div>
             <div className='form-container shadow-lg p-4 bg-body rounded-bottom mb-4'>
                         {/* TR EN*/}
