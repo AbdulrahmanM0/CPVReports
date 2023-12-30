@@ -21,8 +21,6 @@ export default function Tickets() {
         axios.post('https://rd0.cpvarabia.com/api/CTickets.php',{Token:token,lang: lang == 1 ? "" : "EN"})
         .then(res => {
             setData(res.data.RFNO)
-            console.log(res.data.RFNO)
-            console.log(res.data.error)
             if(res.data.error){
               setErrorMSG(true)
             }
