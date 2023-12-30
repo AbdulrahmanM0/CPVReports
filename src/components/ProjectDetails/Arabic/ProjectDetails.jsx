@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Table, Col} from 'reactstrap'
+import { Row, Col} from 'reactstrap'
 
 export default function ProjectDetails({data}) {
     console.log(data)
@@ -8,7 +8,7 @@ export default function ProjectDetails({data}) {
                 <Col sm={12}>
                     <Row>
                     <div className='col-sm-4 fw-bold p-2 bg-light border border-secondary-1 '>
-                        Owner Name - اسم المالك 
+                        اسم المالك 
                     </div>
                     <div className='col-sm-8 p-2 border border-secondary-1 '>
                         {data && data.ProjectDetails[0] && data.ProjectDetails[0].OwnerName}
@@ -18,7 +18,7 @@ export default function ProjectDetails({data}) {
                 <Col sm={12}>
                     <Row>
                     <div className=' col-sm-4 fw-bold p-2 bg-light border border-secondary-1 '>
-                        Contractor name - اسم المقاول
+                        اسم المقاول
                     </div>
                     <div className='col-sm-8 p-2 border border-secondary-1 '>
                         {data && data.ProjectDetails[0] && data.ProjectDetails[0].ConstructorName}
