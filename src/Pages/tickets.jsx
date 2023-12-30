@@ -8,8 +8,12 @@ import axios from 'axios'
 import Select from 'react-select'
 import SaudiIcon from '../assets/images/saudi-arabia.png'
 import USIcon from '../assets/images/united-states.png'
+import { useSearchParams } from 'react-router-dom'
 
 export default function Tickets() {
+    const [searchParams] = useSearchParams();
+    const token = searchParams.get("Tr");
+    console.log(token)
     const [data,setData] = useState(null)
     const [lang,setLang] = useState(1)
     useEffect(()=>{
