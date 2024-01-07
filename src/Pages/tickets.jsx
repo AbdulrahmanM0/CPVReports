@@ -9,6 +9,8 @@ import Select from 'react-select'
 import SaudiIcon from '../assets/images/saudi-arabia.png'
 import USIcon from '../assets/images/united-states.png'
 import { useSearchParams } from 'react-router-dom'
+import ProjectContact from '../components/ProjectDetails/English/ProjectContact'
+import ProjectContactAR from '../components/ProjectDetails/Arabic/ProjectContact'
 
 export default function Tickets() {
     const [searchParams] = useSearchParams();
@@ -68,15 +70,30 @@ export default function Tickets() {
 
       {/* Project Tickets */}
       {lang == 1 ? 
+        <>
           <div className='col-lg-11 col-md-10 col-sm-12 m-auto mb-4'>
             {/* Arabic */}
             <ProjectTickets data={data}/>
           </div>
+
+          <div className='col-lg-11 col-md-10 col-sm-12 m-auto mb-4'>
+            {/* Arabic */}
+            <ProjectContactAR />
+          </div>
+
+        </>
       :
+        <>
           <div className='col-lg-11 col-md-10 col-sm-12 m-auto mb-4'>
             {/* English */}
             <ProjectTicketsEN data={data}/>
           </div>
+
+          <div className='col-lg-11 col-md-10 col-sm-12 m-auto mb-4'>
+            {/* English */}
+            <ProjectContact />
+          </div>
+        </>
       }
         </>
         :         
