@@ -19,23 +19,24 @@ export default function ProjectTickets({data}) {
             <CardHeader>
                 <span className='fw-bold'>ID: {item.ID}</span>
             </CardHeader>
-          <ListGroup className=' text-end' flush>
+          <ListGroup className=' text-end' flush dir='rtl'>
 
                 <ListGroupItem>
                     <div>
-                        <div className='mb-2 fw-bold'>:التعليق </div>
+                        <div className='mb-2 fw-bold'>التعليق :</div>
                         <div>
                             {item.Comment}
                         </div>
                     </div>
                 </ListGroupItem>
-
+                {item.Corrective &&
                 <ListGroupItem>
                     <div>
-                        <div className='mb-2 fw-bold'>:التصحيح </div>
+                        <div className='mb-2 fw-bold'>التصحيح : </div>
                         <div>{item.Corrective}</div>
                     </div>
                 </ListGroupItem>
+                }
             </ListGroup>
         </Card>
         </div>
@@ -49,7 +50,7 @@ export default function ProjectTickets({data}) {
         {data.RD5AR.length >= 1 &&
         <>
             <div className='bg-dark text-white  p-2 ps-4 form-title rounded-top fw-bold text-end'>
-        :    ملاحظات تؤدي الى توقف العمل ويتم حلها بإرسال العميل المطلوب قبل زيارة الفاحص الفني إلى الموقع
+        :       ملاحظات تؤدي الى توقف العمل ويتم حلها بإرسال العميل المطلوب قبل زيارة الفاحص الفني إلى الموقع
             </div>
             <div className='form-container shadow-lg p-4 bg-body rounded-bottom mb-4'>
             {data.RD5AR.map((item,i) => 
@@ -58,23 +59,24 @@ export default function ProjectTickets({data}) {
                 <CardHeader>
                     <span className='fw-bold'>ID: {item.ID}</span>
                 </CardHeader>
-            <ListGroup className='text-end' flush>
+            <ListGroup className='text-end' flush dir='rtl'>
 
                     <ListGroupItem>
                         <div>
-                        <div className='mb-2 fw-bold'>:التعليق </div>
+                        <div className='mb-2 fw-bold'>التعليق :</div>
                             <div>
                                 {item.Comment}
                             </div>
                         </div>
                     </ListGroupItem>
-
+                    {item.Corrective &&
                     <ListGroupItem>
                         <div>
-                        <div className='mb-2 fw-bold'>:التصحيح </div>
+                        <div className='mb-2 fw-bold'>التصحيح : </div>
                             <div>{item.Corrective}</div>
                         </div>
                     </ListGroupItem>
+                    }
                 </ListGroup>
             </Card>
             </div>
@@ -88,7 +90,7 @@ export default function ProjectTickets({data}) {
         {data.RD5InspectionAR.length >= 1 &&
         <>
             <div className='bg-dark text-white  p-2 ps-4 form-title rounded-top fw-bold text-end'>
-        :    ملاحظات تؤدي الى توقف العمل ويتم حلها بإرسال العميل المطلوب أثناء زيارة الفاحص الفني إلى الموقع
+        :       ملاحظات تؤدي الى توقف العمل ويتم حلها بإرسال العميل المطلوب أثناء زيارة الفاحص الفني إلى الموقع
             </div>
             <div className='form-container shadow-lg p-4 bg-body rounded-bottom mb-4'>
             {data.RD5InspectionAR.map((item,i) => 
@@ -97,23 +99,24 @@ export default function ProjectTickets({data}) {
                 <CardHeader>
                     <span className='fw-bold'>ID: {item.ID}</span>
                 </CardHeader>
-            <ListGroup className='text-end' flush>
+            <ListGroup className='text-end' flush dir='rtl'>
 
                     <ListGroupItem>
                         <div>
-                        <div className='mb-2 fw-bold'>:التعليق</div>
+                        <div className='mb-2 fw-bold'>التعليق :</div>
                             <div>
                                 {item.Comment}
                             </div>
                         </div>
                     </ListGroupItem>
-
+                    {item.Corrective &&
                     <ListGroupItem>
                         <div>
-                        <div className='mb-2 fw-bold1'>:التصحيح </div>
+                        <div className='mb-2 fw-bold'>التصحيح : </div>
                             <div>{item.Corrective}</div>
                         </div>
                     </ListGroupItem>
+                    }
                 </ListGroup>
             </Card>
             </div>
@@ -138,11 +141,11 @@ export default function ProjectTickets({data}) {
                 <CardHeader>
                     <span className='fw-bold'>ID: {item.ID}</span>
                 </CardHeader>
-            <ListGroup className='text-end' flush>
+            <ListGroup className='text-end' flush dir='rtl'>
 
                     <ListGroupItem>
                         <div>
-                        <div className='mb-2 fw-bold'>:التعليق </div>
+                        <div className='mb-2 fw-bold'>التعليق :</div>
                             <div>
                                 {item.Comment}
                             </div>

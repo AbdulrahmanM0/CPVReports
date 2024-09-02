@@ -30,13 +30,14 @@ export default function ProjectTickets({data}) {
                         </div>
                     </div>
                 </ListGroupItem>
-
+                {item.Corrective &&
                 <ListGroupItem>
                     <div>
                         <div className='mb-2 fw-bold'>Corrective: </div>
                         <div>{item.Corrective}</div>
                     </div>
                 </ListGroupItem>
+                }
             </ListGroup>
         </Card>
         </div>
@@ -71,13 +72,14 @@ export default function ProjectTickets({data}) {
                             </div>
                         </div>
                     </ListGroupItem>
-
+                    {item.Corrective &&
                     <ListGroupItem>
                         <div>
                             <div className='mb-2 fw-bold'>Corrective: </div>
                             <div>{item.Corrective}</div>
                         </div>
                     </ListGroupItem>
+                    }
                 </ListGroup>
             </Card>
             </div>
@@ -112,13 +114,14 @@ export default function ProjectTickets({data}) {
                             </div>
                         </div>
                     </ListGroupItem>
-
+                    {item.Corrective &&
                     <ListGroupItem>
                         <div>
                             <div className='mb-2 fw-bold'>Corrective: </div>
                             <div>{item.Corrective}</div>
                         </div>
                     </ListGroupItem>
+                    }
                 </ListGroup>
             </Card>
             </div>
